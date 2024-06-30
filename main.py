@@ -35,13 +35,13 @@ def gen_key():
         File.close()
 
 
-def add(username, password, website):
+def add(username: str, password:str, website: str):
     key = load_key()
     fer = Fernet(key)
 
     with open("password.txt", "a") as File:
         File.write((fer.encrypt(username.encode())).decode() + "|" + fer.encrypt(
-            password.encode()).decode() + "|" + website + "\n")
+            password.encode()).decode() + "|" + fer.encrypt(website.encode()).decode() + "\n")
         File.close()
         print("Information Saved")
 
