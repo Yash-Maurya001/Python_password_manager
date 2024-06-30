@@ -30,9 +30,9 @@ def load_key():
 # Generate Key For Encryption
 def gen_key():
     key = Fernet.generate_key()
-    with open("key.key", "wb") as f:
-        f.write(key)
-        f.close()
+    with open("key.key", "wb") as File:
+        File.write(key)
+        File.close()
 
 
 def add(username, password, website):
