@@ -14,7 +14,7 @@ def main():
 
 def how_to_use():
     print("""
-     -a: To add password formate - UserName/Email Password Website
+     -a: To add passwords formate - UserName/Email Password Website
      -v: to View password 
      --gen-key: To generate the key <- use this first before running the -a or -v
     """)
