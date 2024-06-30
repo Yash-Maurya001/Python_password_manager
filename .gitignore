@@ -1,0 +1,6 @@
+*.key
+*.txt
+.venv
+.idea
+
+!requirement.txt
