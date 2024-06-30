@@ -55,6 +55,7 @@ def view():
             user, pwd, website = data.split("|")
             user = fer.decrypt(user.encode()).decode()
             pwd = fer.decrypt(pwd.encode()).decode()
+            website = fer.decrypt(website.encode()).decode()
             print(f"{user} : {pwd} : {website}")
 
 
